@@ -80,5 +80,5 @@ Our platform supports model evaluation across the following key attributes:
 ## Contact
 
 This project is developed by VIPA Lab from Zhejiang University.
-![VIPA_LOGO](./assets/images/vipa-logo.jpg)
+<img src="./assets/images/vipa-logo.jpg" width="40%" />
 ---
