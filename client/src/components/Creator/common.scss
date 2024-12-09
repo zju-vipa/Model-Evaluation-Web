@@ -1,0 +1,183 @@
+@import "../../assets/variables";
+
+
+.model-container {
+  .file-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 580px;
+
+    .model-select {
+      width: 300px;
+      margin-right: 10px;
+      box-shadow: 0 0 6px 1px rgba(0,0,0,0.1);
+      padding: 20px;
+
+      .title{
+        font-size: 22px;
+        font-weight: bolder;
+        border-bottom: 1px solid #dcdfe6;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      .model{
+        height:85%;
+        overflow-y: scroll;
+        margin: 20px 0 0 20px;
+
+        .not-selectable:hover {
+          cursor: not-allowed;
+        }
+
+        .selectable:hover {
+          cursor: pointer;
+          box-shadow: 0 0 18px 2px rgba(0,0,0,0.2);
+          transition: all 0.2s ease-in-out;
+        }
+  
+        .selected {
+          background-color: #79bbff !important;
+          color: white;
+        }
+        
+        /deep/.el-card__body {
+          padding: 10px;
+        }
+
+        .not-selectable{
+          width: 90%;
+          margin-bottom: 5px;
+          background-color: #f4f4f5;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .model-name{
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+          }
+        }
+
+        .selectable{
+          width: 90%;
+          margin-bottom: 5px;
+          background-color: #fff;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .model-name{
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .upload{
+        height: 80px;
+        cursor: pointer;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        .upload-button{
+          font-size: 20px;
+        }
+      }
+    }
+    
+
+    .desc-container{
+      width: 750px;
+      margin-right: 10px;
+      box-shadow: 0 0 6px 1px rgba(0,0,0,0.1);
+      padding: 20px;
+
+      .title{
+        font-size: 22px;
+        font-weight: bolder;
+        border-bottom: 1px solid #dcdfe6;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+      .desc-content{
+        /deep/ .el-descriptions-item__label{
+          width: 200px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        ::-webkit-scrollbar {
+          display: none;
+        }
+        
+        .desc {
+          overflow-y: scroll;
+          height: 200px;
+          font-size: 17px;
+        }
+      }
+
+      .desc-empty{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+    }
+  }
+
+  .param-uploader-container {
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .upload {
+      width: 580px;
+      text-align: center;
+    }
+  
+    /deep/ .el-upload__tip{
+      font-size: 18px;
+    }
+  }
+}
+
+.drawer-container{
+  padding: 1rem;
+
+  .title{
+    margin-bottom: 10px;
+  }
+
+  .upload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .upload-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+  }
+
+  ::v-deep .el-form-item__label{
+    font-size: 18px;
+  }
+
+  ::v-deep .el-input__inner {
+    font-size: 15px;
+  }
+}
